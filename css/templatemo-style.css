@@ -61,7 +61,7 @@ body { overflow-x: hidden; }
 .tm-nav li a.active,
 .tm-nav li a:focus,
 .tm-nav li a:hover {
-	background: #FCDD44;
+	background: #00aaff;
 	color: #000;
 }
 
