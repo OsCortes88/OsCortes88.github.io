@@ -37,6 +37,7 @@ body { overflow-x: hidden; }
 	font-size: 27px;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin-left: 10%;
 }
 .tm-site-name:hover,
 .tm-site-name:focus {
@@ -46,10 +47,13 @@ body { overflow-x: hidden; }
 .tm-nav {
 	display: block;
 	overflow: hidden;
+	background-color: #000;
+	float: center;
 }
 .tm-nav li {
 	list-style: none;
-	float: left;
+	float: right;
+
 }
 .tm-nav li a {
 	color: #838383;
@@ -62,7 +66,7 @@ body { overflow-x: hidden; }
 .tm-nav li a:focus,
 .tm-nav li a:hover {
 	background: #00aaff;
-	color: #000;
+	color: black;
 }
 
 /* Banner */
