@@ -13,7 +13,7 @@ ul,p {
 	padding: 0;
 }
 h1,h2,h3 {
-	color: green;
+	color: rgb(0, 0, 0);
 	margin: 0;
 	padding: 0;
 }
@@ -37,6 +37,7 @@ body { overflow-x: hidden; }
 	font-size: 27px;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin-left: 10%;
 }
 .tm-site-name:hover,
 .tm-site-name:focus {
@@ -46,10 +47,13 @@ body { overflow-x: hidden; }
 .tm-nav {
 	display: block;
 	overflow: hidden;
+	background-color: #000;
+	float: center;
 }
 .tm-nav li {
 	list-style: none;
-	float: left;
+	float: right;
+
 }
 .tm-nav li a {
 	color: #838383;
@@ -62,7 +66,7 @@ body { overflow-x: hidden; }
 .tm-nav li a:focus,
 .tm-nav li a:hover {
 	background: #00aaff;
-	color: #000;
+	color: black;
 }
 
 /* Banner */
@@ -103,8 +107,8 @@ body { overflow-x: hidden; }
 .tm-banner-subtitle { font-size: 34px; }
 .tm-yellow-text { color: #1e34b3; }
 .tm-banner-link {
-	background: rgba(252, 221, 68, 0.39) none repeat scroll 0% 0%;
-	border: 1px solid #D2B731;
+	background: rgba(68, 108, 252, 0.39) none repeat scroll 0% 0%;
+	border: 1px solid #314cd2;
 	color: #FFF;
 	font-weight: 600;
 	display: inline-block;
@@ -114,7 +118,7 @@ body { overflow-x: hidden; }
 }
 .tm-banner-link:hover,
 .tm-banner-link:focus {
-	background: rgba(252, 221, 68, 1);
+	background: rgb(68, 126, 252);
 	color: #000;
 }
 .flexslider.flexslider-banner {
@@ -133,7 +137,7 @@ body { overflow-x: hidden; }
 }
 
 /* Section 1, index.html */
-.tm-gray-bg { background-color: #630404; }
+.tm-gray-bg { background-color: #ffffff; }
 .tm-home-section-1 {
 	position: relative;
 	top: -50px;
@@ -396,7 +400,8 @@ hr { border-top: 1px solid #111010; }
 }
 .tm-tours-box-1-info-right { padding-left: 30px; }
 .margin-bottom-20 { margin-bottom: 20px; }
-.margin-bottom-30 { margin-bottom: 30px; }
+.margin-bottom-40 { margin-bottom: 40px; }
+.margin-bottom-80 { margin-bottom: 80px; }
 .gray-text { color: #B1B1B1; }
 .tours-1-description { line-height: 1.8; }
 .tm-tours-box-1-link { overflow: hidden }
@@ -523,9 +528,9 @@ hr { border-top: 1px solid #111010; }
 	padding-bottom: 15px;
 }
 .tm-what-we-do-right {
-	float: right;
-	margin-left: 30px;
-	max-width: 820px;
+	float: center;
+	margin-left: 150px;
+	/* max-width: 820px; */
 	width: 100%;
 }
 .tm-about-box-2 { overflow: hidden; }
@@ -619,6 +624,7 @@ hr { border-top: 1px solid #111010; }
 	margin-left: 40px;
 	max-width: 550px;
 	width: 100%;
+	color: white;
 }
 .effect2-contact::before, 
 .effect2-contact::after {
