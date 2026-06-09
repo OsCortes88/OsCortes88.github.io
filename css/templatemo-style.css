@@ -65,7 +65,7 @@ body { overflow-x: hidden; }
 .tm-nav li a.active,
 .tm-nav li a:focus,
 .tm-nav li a:hover {
-	background: #00aaff;
+	background: #2fbaf5;
 	color: black;
 }
 
@@ -299,6 +299,23 @@ body { overflow-x: hidden; }
 .hotel-search-form .form-group { margin-bottom: 30px; }
 
 /*Section 2, index.html */
+
+.card-style {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.card-style:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+
 .section-margin-top { margin-top: 100px; }
 hr { border-top: 1px solid #111010; }
 .tm-section-header {
@@ -317,20 +334,16 @@ hr { border-top: 1px solid #111010; }
 }
 .tm-home-box-2 h3 {
 	font-size: 14px;
-	padding: 30px 25px;
-	text-transform: uppercase;
+	padding: 25px 5px;
 }
 .tm-date {
 	color: #c3c3c3;
-	padding: 10px 25px;
+	padding: 0px 5px;
 	text-transform: uppercase;
 }
-.tm-home-box-2-container {
-	border-top: 1px solid #DDD;
-	overflow: hidden;
-}
 .tm-home-box-2-link {
-	display: inline-block;
+	display: flex;
+  align-items: flex-start;
 	height: 100%;
 	color: black;	
 	transition: all 0.3s ease;
@@ -338,8 +351,18 @@ hr { border-top: 1px solid #111010; }
 }
 .tm-home-box-2-link:hover,
 .tm-home-box-2-link:focus {
-	color: #FCDD44;
+	color: #2fbaf5;
 }
+
+.tm-home-box-2-link img {
+  transition: filter 0.3s ease;
+}
+
+.tm-home-box-2-link:hover img,
+.tm-home-box-2-link:focus img {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(83%) saturate(747%) hue-rotate(169deg) brightness(96%) contrast(95%);
+}
+
 .border-left { border-left: 1px solid #DDD; }
 .border-right {	border-right: 1px solid #DDD; }
 .tm-home-box-2-icon {
@@ -904,6 +927,16 @@ hr { border-top: 1px solid #111010; }
 		text-align: center;
 	}
 }
+
+.dark-img {
+  filter: brightness(50%);
+}
+
+.round-image {
+  border-radius: 12px;   /* adjust the number for more or less rounding */
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 
 @media screen and (max-width: 400px) {
 	.tm-section-title {	font-size: 28px; }
