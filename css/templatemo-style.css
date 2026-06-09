@@ -342,7 +342,8 @@ hr { border-top: 1px solid #111010; }
 	text-transform: uppercase;
 }
 .tm-home-box-2-link {
-	display: inline-block;
+	display: flex;
+  align-items: flex-start;
 	height: 100%;
 	color: black;	
 	transition: all 0.3s ease;
