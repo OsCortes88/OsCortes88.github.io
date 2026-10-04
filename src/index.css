@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --brand-blue: #2fc8fc;
+  --brand-purple: #5219b0;
+  --brand-red: #cb0f46;
+}
+
+@font-face {
+  font-family: "Audiowide";
+  src: url("/src/assets/fonts/Audiowide-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Audiowide", sans-serif;
+  background: #121212;
+  color: rgb(255, 255, 255);
+}
+
+.tm-home-box-2-link {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  color: white;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.tm-home-box-2-link:hover,
+.tm-home-box-2-link:focus {
+  color: #2fbaf5;
+}
+
+.tm-home-box-2-link img {
+  transition: filter 0.3s ease;
+}
+
+.tm-home-box-2-link:hover img,
+.tm-home-box-2-link:focus img {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(83%) saturate(747%)
+    hue-rotate(169deg) brightness(96%) contrast(95%);
+}
+
+.skills-group {
+  margin-bottom: 1.5rem;
+}
+
+.skills-group h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-badges img {
+  display: block;
+  height: 28px;
+  width: auto;
+}
