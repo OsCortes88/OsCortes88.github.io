@@ -155,6 +155,8 @@ export default function Home() {
             </div>
             <a
               href="https://docs.google.com/document/d/1ot_hIcSndYVe4vVYqQdZgg8NTJPuTOY_PhlAhl9MUIo/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex tm-home-box-2-link gap-2 justify-center items-center"
             >
               View Resume

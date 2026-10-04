@@ -47,7 +47,7 @@ export default function ProjectCard({ title, description, link, image, date }) {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex gap-2 px-6 py-3 rounded-lg text-white font-semibold bg-brand-purple hover:bg-[#6d2ad8] transition-all duration-300 shadow-md hover:shadow-lg"
+          className="flex gap-2 px-6 py-3 rounded-lg text-white font-semibold bg-(--brand-purple) hover:bg-[#6d2ad8] transition-all duration-300 shadow-md hover:shadow-lg"
         >
           View Project
           <ExternalLinkIcon />

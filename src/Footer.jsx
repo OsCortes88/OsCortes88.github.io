@@ -27,6 +27,8 @@ export default function Footer() {
               <div className="flex gap-5">
                 <a
                   href="https://github.com/OsCortes88"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:scale-115"
                 >
                   <img
@@ -36,6 +38,8 @@ export default function Footer() {
                 </a>
                 <a
                   href="https://www.linkedin.com/in/oswaldo-cortes/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:scale-115"
                 >
                   <img src="/img/icons/linkedin.svg" className="w-8" />
