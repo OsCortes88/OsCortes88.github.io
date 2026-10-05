@@ -69,7 +69,7 @@ export default function Home() {
             Featured Projects
           </SectionHeading>
           <a
-            href="http://localhost:5173/projects"
+            href="https://oscortes88.github.io/#/projects"
             className="flex tm-home-box-2-link gap-2 justify-center items-center my-8"
           >
             View Projects
