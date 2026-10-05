@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="p-10 bg-black text-white">
       <Reveal>
         <div className="flex flex-col items-center gap-10">
-          <h1 className="text-4xl">Let's Connect!</h1>
+          <h1 className="text-3xl sm:text-4xl">Let's Connect!</h1>
           <div className="flex flex-col sm:flex-row gap-10">
             {/* Contacts */}
             <div className="flex flex-col gap-4 items-center">
-              <h1 className="text-3xl">Contacts</h1>
+              <h1 className="text-2xl sm:text-3xl">Contacts</h1>
               <a
                 className="flex items-center gap-2"
                 href="mailto:oswaldoct2021@outlook.com"
@@ -23,7 +23,7 @@ export default function Footer() {
 
             {/* Socials */}
             <div className="flex flex-col gap-4 items-center">
-              <h1 className="text-3xl">Socials</h1>
+              <h1 className="text-2xl sm:text-3xl">Socials</h1>
               <div className="flex gap-5">
                 <a
                   href="https://github.com/OsCortes88"
