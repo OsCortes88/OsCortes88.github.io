@@ -77,6 +77,12 @@ export const projects = {
   ],
 };
 
+const scrollToSelection = (id) => {
+  document
+    .getElementById(id)
+    .scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
 export default function Projects() {
   return (
     <>
@@ -92,25 +98,41 @@ export default function Projects() {
 
               <div className="flex flex-wrap justify-center gap-3 text-white">
                 <a
-                  href="#node"
+                  href="#/projects"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSelection("node");
+                  }}
                   className="bg-blue-500/50 px-6 py-3 rounded hover:bg-blue-600 hover:scale-105 transition"
                 >
                   Node.js
                 </a>
                 <a
-                  href="#c"
+                  href="#/projects"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSelection("c");
+                  }}
                   className="bg-blue-500/50 px-6 py-3 rounded hover:bg-blue-600 hover:scale-105 transition"
                 >
                   C++ & Python
                 </a>
                 <a
-                  href="#html"
+                  href="#/projects"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSelection("html");
+                  }}
                   className="bg-blue-500/50 px-6 py-3 rounded hover:bg-blue-600 hover:scale-105 transition"
                 >
                   HTML & JS
                 </a>
                 <a
-                  href="#java"
+                  href="#/projects"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSelection("java");
+                  }}
                   className="bg-blue-500/50 px-6 py-3 rounded hover:bg-blue-600 hover:scale-105 transition"
                 >
                   Java
