@@ -5,6 +5,22 @@ import Reveal, { SLIDE_FROM } from "./Reveal";
 export const projects = {
   node: [
     {
+      title: "Connect",
+      description:
+        "One challenge instructors often face is capturing students' attention at the start of class. Without engagement, even the best lesson can struggle to make an impact. Yet creating meaningful icebreakers or introductory activities takes valuable planning time.\n\nConnect is an AI-powered web application that helps instructors quickly generate engaging class activities designed to build connections with students and smoothly introduce lesson content. By reducing prep time and providing relevant, tailored activities, Connect helps educators create a more engaging start to every class.",
+      link: "", // TODO: Make dedicated page for project with demo video and more detailed descriptions
+      image: "/img/projects/Connect.png",
+      date: "September 15, 2026",
+    },
+    {
+      title: "Trackly",
+      description:
+        "Through the Digital NEST WIT Pathway course, I had the opportunity to work on Trackly, an asset management web application that helps Digital NEST keep track of organizational assets such as computers, cameras, monitors, and more.\n\nOne challenge users faced was having to create separate entries for every asset they wanted to add to the system. This process became time-consuming, especially when managing large numbers of assets. Our goal for the summer was to develop a bulk asset import feature that would allow users to upload a CSV file containing data for multiple assets at once.",
+      link: "", // TODO: Make dedicated page for project with demo video and more detailed descriptions
+      image: "/img/projects/Trackly.png",
+      date: "July 15, 2026",
+    },
+    {
       title: "LIBSC Better Maps App",
       description:
         "The Lithium-Ion Battery Supply Chain Better Maps web application was my senior capstone project at CSUMB.\n In this project, I worked closely with the National Renewable Energy Laboratory (NREL) to create a tooling application that generated graphical data on their production facilities.\nUsers could filter the data by state, products, status, and production capacity. In addition, the web application provides an export feature that allows users to download images of the map and table data.",
@@ -158,7 +174,7 @@ export default function Projects() {
               <div className="grow border-(--brand-blue) border-t "></div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-10 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <Reveal direction={SLIDE_FROM.left}>
                 <ProjectCard
                   title={projects.node[0].title}
@@ -175,6 +191,24 @@ export default function Projects() {
                   link={projects.node[1].link}
                   image={projects.node[1].image}
                   date={projects.node[1].date}
+                />
+              </Reveal>
+              <Reveal direction={SLIDE_FROM.left}>
+                <ProjectCard
+                  title={projects.node[2].title}
+                  description={projects.node[2].description}
+                  link={projects.node[2].link}
+                  image={projects.node[2].image}
+                  date={projects.node[2].date}
+                />
+              </Reveal>
+              <Reveal direction={SLIDE_FROM.right}>
+                <ProjectCard
+                  title={projects.node[3].title}
+                  description={projects.node[3].description}
+                  link={projects.node[3].link}
+                  image={projects.node[3].image}
+                  date={projects.node[3].date}
                 />
               </Reveal>
             </div>
