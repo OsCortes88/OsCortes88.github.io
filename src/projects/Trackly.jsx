@@ -3,6 +3,7 @@ import Footer from "../Footer";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import Reveal, { SLIDE_FROM } from "../Reveal";
+import { badgeUrl, groups } from "../Skills";
 
 export default function Trackly() {
   return (
@@ -22,15 +23,42 @@ export default function Trackly() {
               An asset management web app that helps Digital NEST keep track of
               computers, cameras, monitors, and more.
             </p>
-            <div className="flex flex-row gap-5">
-              <label className="border border-zinc-700 rounded-2xl py-2 px-4">
-                React
+            <div className="flex flex-row flex-wrap gap-5">
+              <label>
+                <img
+                  src={badgeUrl(groups[1].badges[0])}
+                  alt={groups[1].badges[0].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
               </label>
-              <label className="border border-zinc-700 rounded-2xl py-2 px-4">
-                TypeScript
+              <label>
+                <img
+                  src={badgeUrl(groups[0].badges[1])}
+                  alt={groups[0].badges[1].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
               </label>
-              <label className="border border-zinc-700 rounded-2xl py-2 px-4">
-                Papa Parse
+              <label>
+                <img
+                  src={badgeUrl(groups[1].badges[3])}
+                  alt={groups[1].badges[3].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
+              </label>
+              <label>
+                <img
+                  src={badgeUrl(groups[1].badges[4])}
+                  alt={groups[1].badges[3].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
               </label>
             </div>
           </div>
