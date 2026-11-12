@@ -16,7 +16,7 @@ export const projects = {
       title: "Trackly",
       description:
         "Through the Digital NEST WIT Pathway course, I had the opportunity to work on Trackly, an asset management web application that helps Digital NEST keep track of organizational assets such as computers, cameras, monitors, and more.\n\nOne challenge users faced was having to create separate entries for every asset they wanted to add to the system. This process became time-consuming, especially when managing large numbers of assets. Our goal for the summer was to develop a bulk asset import feature that would allow users to upload a CSV file containing data for multiple assets at once.",
-      link: "", // TODO: Make dedicated page for project with demo video and more detailed descriptions
+      link: "/projects/trackly",
       image: "/img/projects/Trackly.png",
       date: "July 15, 2026",
     },
