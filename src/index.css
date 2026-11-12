@@ -4,6 +4,7 @@
   --brand-blue: #2fc8fc;
   --brand-purple: #5219b0;
   --brand-red: #cb0f46;
+  --brand-charcol: #0b0b0b;
 }
 
 @font-face {
@@ -21,7 +22,7 @@ body {
 
 body {
   font-family: "Audiowide", sans-serif;
-  background: #121212;
+  background: black;
   color: rgb(255, 255, 255);
 }
 
