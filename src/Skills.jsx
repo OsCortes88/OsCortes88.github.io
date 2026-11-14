@@ -1,7 +1,7 @@
 import Reveal, { SLIDE_FROM } from "./Reveal";
 
 export const badgeUrl = ({ name, logo, logoColor, labelColor }) =>
-  `https://img.shields.io/badge/-${encodeURIComponent(name)}-1a1b27` +
+  `https://img.shields.io/badge/-${encodeURIComponent(name.replace(/-/g, "--"))}-1a1b27` +
   `?style=flat&logo=${logo}&logoColor=${logoColor}&labelColor=${labelColor}`;
 
 export const groups = [
@@ -39,11 +39,18 @@ export const groups = [
         labelColor: "20232a",
       },
       {
-        name: "Next.js",
-        logo: "next.js",
+        name: "shadcn/ui",
+        logo: "shadcnui",
         logoColor: "white",
         labelColor: "000000",
       },
+      {
+        name: "Tailwind CSS",
+        logo: "tailwind-css",
+        logoColor: "white",
+        labelColor: "38B2AC",
+      },
+
       {
         name: "HTML5",
         logo: "html5",
@@ -51,10 +58,16 @@ export const groups = [
         labelColor: "E34F26",
       },
       {
-        name: "Tailwind CSS",
-        logo: "tailwind-css",
+        name: "Next.js",
+        logo: "next.js",
         logoColor: "white",
-        labelColor: "38B2AC",
+        labelColor: "000000",
+      },
+      {
+        name: "Vite.js",
+        logo: "vite",
+        logoColor: "white",
+        labelColor: "BD34FE",
       },
       {
         name: "Papa Parse",
