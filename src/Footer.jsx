@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 export default function Footer() {
   return (
-    <footer className="p-10 bg-black text-white">
+    <footer className="p-10 bg-black text-white border-t border-t-zinc-700">
       <Reveal>
         <div className="flex flex-col items-center gap-10">
           <h1 className="text-3xl sm:text-4xl">Let's Connect!</h1>

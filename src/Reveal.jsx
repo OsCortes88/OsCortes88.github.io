@@ -23,7 +23,7 @@ export default function Reveal({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.2 },
+      { threshold: 0 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -34,7 +34,7 @@ export default function Reveal({
   return (
     <div
       ref={ref}
-      className={`
+      className={`grid
         transition-all duration-1200 ease-out
         ${visible ? "opacity-100 translate-y-0" : `opacity-0 ${direction}`}
         ${className}

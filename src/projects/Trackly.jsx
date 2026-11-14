@@ -1,0 +1,208 @@
+import React from "react";
+import Footer from "../Footer";
+import {
+  AlertTriangle,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  Flag,
+  HammerIcon,
+  Puzzle,
+  TrendingUp,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import Reveal, { SLIDE_FROM } from "../Reveal";
+import { badgeUrl, groups } from "../Skills";
+
+export default function Trackly() {
+  return (
+    <>
+      <main className="flex flex-col mx-5 md:mx-25 xl:mx-50 gap-10 m-10">
+        <Reveal>
+          <div className="flex flex-col gap-5 items-start">
+            <Link
+              to="/projects"
+              className="flex flex-row text-[#b9b9c4] hover:text-blue-400"
+            >
+              <ChevronLeftIcon />
+              All Projects
+            </Link>
+            <h1 className="text-5xl">Trackly</h1>
+            <p className="text-[#b9b9c4]">
+              An asset management web app that helps Digital NEST keep track of
+              computers, cameras, monitors, and more throught there 5 centers in
+              California.
+            </p>
+            <div className="flex flex-row flex-wrap gap-5">
+              <label>
+                <img
+                  src={badgeUrl(groups[1].badges[0])}
+                  alt={groups[1].badges[0].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
+              </label>
+              <label>
+                <img
+                  src={badgeUrl(groups[1].badges[2])}
+                  alt={groups[1].badges[0].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
+              </label>
+              <label>
+                <img
+                  src={badgeUrl(groups[0].badges[1])}
+                  alt={groups[0].badges[1].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
+              </label>
+              <label>
+                <img
+                  src={badgeUrl(groups[1].badges[3])}
+                  alt={groups[1].badges[3].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
+              </label>
+              <label>
+                <img
+                  src={badgeUrl(groups[1].badges[6])}
+                  alt={groups[1].badges[3].name}
+                  height={28}
+                  loading="lazy"
+                  className="block h-7 w-auto"
+                />
+              </label>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal>
+          <div className="video-container overflow-hidden rounded-2xl">
+            <iframe
+              src="https://www.youtube.com/embed/bCG3AJD3yKo"
+              title="YouTube video player"
+              className="w-full aspect-video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </Reveal>
+
+        <Reveal direction={SLIDE_FROM.right}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="border-t-2 pt-5 border-t-blue-500 ">
+              <h2 className="flex items-center gap-2 text-2xl">
+                Problem
+                <AlertTriangle />
+              </h2>
+              <p className="pt-2 text-[#b9b9c4]">
+                Uploading multiple assets one at a time was slow and
+                time-consuming.
+              </p>
+            </div>
+            <div className="border-t-2 pt-5 gap-5 border-t-(--brand-purple) ">
+              <h2 className="flex items-center gap-2 text-2xl">
+                Goal
+                <Flag />
+              </h2>
+              <p className="pt-2 text-[#b9b9c4]">
+                Build a semi-automated bulk import feature so users can upload a
+                CSV file containing a list of assets and store them in the
+                application.
+              </p>
+            </div>
+            <div className="border-t-2 pt-5 gap-5 border-t-(--brand-red) ">
+              <h2 className="flex items-center gap-2 text-2xl">
+                Solution
+                <Puzzle />
+              </h2>
+              <p className="pt-2 text-[#b9b9c4]">
+                A step-by-step import wizard: upload the CSV, map columns to
+                asset properties, validate the data, and import straight into
+                the database.
+              </p>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal direction={SLIDE_FROM.right}>
+          <div className="grid grid-cols-1 md:grid-cols-2 p-8 gap-6 md:gap-5 justify-center items-center border border-zinc-800 bg-(--brand-charcoal) rounded-2xl">
+            <div>
+              <h2 className="flex items-center gap-2 text-2xl">
+                Result
+                <TrendingUp />
+              </h2>
+              <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
+                <li>
+                  Uploading assets that used to take up to 30 minutes now takes
+                  about 5 minutes, making asset management far more efficient
+                  for staff.
+                </li>
+              </ul>
+            </div>
+            <div className="flex justify-center">
+              <p className="inline-block text-3xl md:text-4xl xl:text-5xl text-center bg-linear-to-r from-[#627AF8] via-[#A567C7] to-[#f33232] bg-clip-text font-bold text-transparent">
+                30 min → 5 min
+              </p>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal>
+          <div className="flex flex-col gap-5">
+            <h2 className="flex items-center gap-2 text-2xl">
+              My Contributions <HammerIcon />
+            </h2>
+            <Reveal direction={SLIDE_FROM.right}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="p-5 border border-zinc-800 bg-(--brand-charcoal) rounded-2xl">
+                  <h3>Backend</h3>
+                  <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
+                    <li>
+                      Wrote the logic that parses CSV data, maps and validates
+                      it, and creates asset entities for database storage.
+                    </li>
+                  </ul>
+                </div>
+                <div className="p-5 border border-zinc-800 bg-(--brand-charcoal) rounded-2xl">
+                  <h3>Frontend</h3>
+                  <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
+                    <li>
+                      Built the bulk import wizard UI: upload a CSV, map columns
+                      to asset fields, and save assets to Supabase.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </Reveal>
+
+        <div className="pt-5 border-t border-t-zinc-700 flex justify-between items-center">
+          <Link
+            to="/projects/connect"
+            className="flex flex-row items-center gap-2 text-[#b9b9c4] hover:text-blue-400 transition-colors"
+          >
+            <ChevronLeftIcon className="w-5 h-5" />
+            Back
+          </Link>
+
+          <Link
+            to="/projects"
+            className="flex flex-row items-center gap-2 text-[#b9b9c4] hover:text-blue-400 transition-colors"
+          >
+            Next
+            <ChevronRightIcon className="w-5 h-5" />
+          </Link>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}

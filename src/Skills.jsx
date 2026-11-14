@@ -1,10 +1,10 @@
 import Reveal, { SLIDE_FROM } from "./Reveal";
 
-const badgeUrl = ({ name, logo, logoColor, labelColor }) =>
-  `https://img.shields.io/badge/-${encodeURIComponent(name)}-1a1b27` +
+export const badgeUrl = ({ name, logo, logoColor, labelColor }) =>
+  `https://img.shields.io/badge/-${encodeURIComponent(name.replace(/-/g, "--"))}-1a1b27` +
   `?style=flat&logo=${logo}&logoColor=${logoColor}&labelColor=${labelColor}`;
 
-const groups = [
+export const groups = [
   {
     title: "Languages",
     badges: [
@@ -22,7 +22,7 @@ const groups = [
       },
       {
         name: "Java",
-        logo: "openjdk",
+        logo: "coffeescript",
         logoColor: "white",
         labelColor: "ED8B00",
       },
@@ -39,11 +39,18 @@ const groups = [
         labelColor: "20232a",
       },
       {
-        name: "Next.js",
-        logo: "next.js",
+        name: "shadcn/ui",
+        logo: "shadcnui",
         logoColor: "white",
         labelColor: "000000",
       },
+      {
+        name: "Tailwind CSS",
+        logo: "tailwind-css",
+        logoColor: "white",
+        labelColor: "38B2AC",
+      },
+
       {
         name: "HTML5",
         logo: "html5",
@@ -51,10 +58,24 @@ const groups = [
         labelColor: "E34F26",
       },
       {
-        name: "Tailwind CSS",
-        logo: "tailwind-css",
+        name: "Next.js",
+        logo: "next.js",
         logoColor: "white",
-        labelColor: "38B2AC",
+        labelColor: "000000",
+      },
+      {
+        name: "Vite.js",
+        logo: "vite",
+        logoColor: "white",
+        labelColor: "BD34FE",
+      },
+      {
+        name: "Papa Parse",
+        logo: encodeURIComponent(
+          `data:image/svg+xml;base64,${btoa(`<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><path d="M2.208 10.624l4.544 39.392L32 64l25.248-13.984 4.544-39.392L32 0z" fill="#dc1431"/><path d="M32 7.104v-.032V64l25.248-13.984 4.544-39.392L32 0z" fill="#c30e2f"/><path d="M32 7.072l-18.624 41.76h6.944l3.744-9.344h15.808l3.744 9.344h6.944zm5.44 26.656H26.56L32 20.64z" fill="#fff"/><script xmlns=""/></svg>`)}`,
+        ),
+        logoColor: "white",
+        labelColor: "20232a",
       },
     ],
   },

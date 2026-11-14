@@ -1,4 +1,5 @@
 import { ExternalLinkIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ProjectCard({ title, description, link, image, date }) {
   const descriptionParagraphs = description
@@ -11,7 +12,7 @@ export default function ProjectCard({ title, description, link, image, date }) {
     ));
 
   return (
-    <div className="flex flex-col p-5 gap-4 rounded-2xl shadow-gray-400 shadow-sm hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out w-xs h-full">
+    <div className="flex flex-col p-5 bg-(--brand-charcoal) gap-8 rounded-2xl shadow-gray-400 shadow-sm hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out w-xs h-full">
       {/* Title: fixed min height so wrapped titles don't shift things below */}
       <div className="flex flex-col justify-center items-center gap-2">
         <a
@@ -43,15 +44,15 @@ export default function ProjectCard({ title, description, link, image, date }) {
       <div className="flex flex-col gap-4 grow">{descriptionParagraphs}</div>
 
       <div className="flex justify-center mt-auto pt-4">
-        <a
-          href={link}
+        <Link
+          to={link}
           target="_blank"
           rel="noopener noreferrer"
           className="flex gap-2 px-6 py-3 rounded-lg text-white font-semibold bg-(--brand-purple) hover:bg-[#6d2ad8] transition-all duration-300 shadow-md hover:shadow-lg"
         >
           View Project
           <ExternalLinkIcon />
-        </a>
+        </Link>
       </div>
     </div>
   );

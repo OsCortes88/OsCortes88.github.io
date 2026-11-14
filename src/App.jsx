@@ -1,12 +1,15 @@
 import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./Projects";
+import Trackly from "./projects/Trackly";
+import Connect from "./projects/Connect";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
       {/* Shared Navigation Bar */}
-      <nav className="pl-4 pr-8 md:pl-12 md:pr-18 py-5 bg-black text-white flex items-center justify-between">
+      <nav className="pl-4 pr-8 md:pl-12 md:pr-18 py-5 bg-black border-b border-b-zinc-700 text-white flex items-center justify-between">
         <img className="object-cover h-10" src="/img/icons/initials.png" />
 
         <div className="flex gap-6">
@@ -36,9 +39,12 @@ function App() {
 
       {/* Page Routing */}
       <div className="">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/trackly" element={<Trackly />} />
+          <Route path="/projects/connect" element={<Connect />} />
         </Routes>
       </div>
     </Router>
