@@ -21,10 +21,10 @@ export default function Trackly() {
           <div className="flex flex-col gap-5 items-start">
             <Link
               to="/projects"
-              className="flex flex-row self-end text-[#b9b9c4] hover:text-blue-400"
+              className="flex flex-row text-[#b9b9c4] hover:text-blue-400"
             >
+              <ChevronLeftIcon />
               All Projects
-              <ChevronRightIcon />
             </Link>
             <h1 className="text-5xl">Trackly</h1>
             <p className="text-[#b9b9c4]">
@@ -138,11 +138,13 @@ export default function Trackly() {
                 Result
                 <TrendingUp />
               </h2>
-              <p className="pt-2 text-[#b9b9c4]">
-                Uploading assets that used to take up to 30 minutes now takes
-                about 5 minutes, making asset management far more efficient for
-                staff.
-              </p>
+              <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
+                <li>
+                  Uploading assets that used to take up to 30 minutes now takes
+                  about 5 minutes, making asset management far more efficient
+                  for staff.
+                </li>
+              </ul>
             </div>
             <div className="flex justify-center">
               <p className="inline-block text-3xl md:text-4xl xl:text-5xl text-center bg-linear-to-r from-[#627AF8] via-[#A567C7] to-[#f33232] bg-clip-text font-bold text-transparent">
@@ -161,17 +163,21 @@ export default function Trackly() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="p-5 border border-zinc-800 bg-(--brand-charcol) rounded-2xl">
                   <h3>Backend</h3>
-                  <p className="pt-2 text-[#b9b9c4]">
-                    Wrote the logic that parses CSV data, maps and validates it,
-                    and creates asset entities for database storage.
-                  </p>
+                  <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
+                    <li>
+                      Wrote the logic that parses CSV data, maps and validates
+                      it, and creates asset entities for database storage.
+                    </li>
+                  </ul>
                 </div>
                 <div className="p-5 border border-zinc-800 bg-(--brand-charcol) rounded-2xl">
                   <h3>Frontend</h3>
-                  <p className="pt-2 text-[#b9b9c4]">
-                    Built the bulk import wizard UI: upload a CSV, map columns
-                    to asset fields, and save assets to Supabase.
-                  </p>
+                  <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
+                    <li>
+                      Built the bulk import wizard UI: upload a CSV, map columns
+                      to asset fields, and save assets to Supabase.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </Reveal>
