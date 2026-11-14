@@ -12,7 +12,7 @@ export default function ProjectCard({ title, description, link, image, date }) {
     ));
 
   return (
-    <div className="flex flex-col p-5 gap-8 rounded-2xl shadow-gray-400 shadow-sm hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out w-xs h-full">
+    <div className="flex flex-col p-5 bg-(--brand-charcoal) gap-8 rounded-2xl shadow-gray-400 shadow-sm hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out w-xs h-full">
       {/* Title: fixed min height so wrapped titles don't shift things below */}
       <div className="flex flex-col justify-center items-center gap-2">
         <a

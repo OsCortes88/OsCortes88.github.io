@@ -132,7 +132,7 @@ export default function Trackly() {
         </Reveal>
 
         <Reveal direction={SLIDE_FROM.right}>
-          <div className="grid grid-cols-1 md:grid-cols-2 p-8 gap-6 md:gap-5 justify-center items-center border border-zinc-800 bg-(--brand-charcol) rounded-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 p-8 gap-6 md:gap-5 justify-center items-center border border-zinc-800 bg-(--brand-charcoal) rounded-2xl">
             <div>
               <h2 className="flex items-center gap-2 text-2xl">
                 Result
@@ -161,7 +161,7 @@ export default function Trackly() {
             </h2>
             <Reveal direction={SLIDE_FROM.right}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="p-5 border border-zinc-800 bg-(--brand-charcol) rounded-2xl">
+                <div className="p-5 border border-zinc-800 bg-(--brand-charcoal) rounded-2xl">
                   <h3>Backend</h3>
                   <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
                     <li>
@@ -170,7 +170,7 @@ export default function Trackly() {
                     </li>
                   </ul>
                 </div>
-                <div className="p-5 border border-zinc-800 bg-(--brand-charcol) rounded-2xl">
+                <div className="p-5 border border-zinc-800 bg-(--brand-charcoal) rounded-2xl">
                   <h3>Frontend</h3>
                   <ul className="pt-2 list-disc pl-5 marker:text-blue-500 text-[#b9b9c4]">
                     <li>

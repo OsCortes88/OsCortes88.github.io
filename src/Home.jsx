@@ -132,7 +132,7 @@ export default function Home() {
             id="Skills"
             className="flex flex-col gap-8 items-center justify-center w-full"
           >
-            <div className="flex p-5 items-center rounded-2xl border-2 border-gray-500 gap-5">
+            <div className="flex p-5 items-center bg-(--brand-charcoal) rounded-2xl border border-zinc-700 gap-5">
               <img
                 src="/img/icons/digital-nest-inc-logo.jpg"
                 className="rounded-2xl h-15 w-15"
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex p-5 items-center rounded-2xl border-2 border-gray-500 gap-5">
+            <div className="flex p-5 items-center bg-(--brand-charcoal) rounded-2xl border border-zinc-700 gap-5">
               <img
                 src="/img/icons/uber.png"
                 className="rounded-2xl h-15 w-15"
