@@ -159,7 +159,7 @@ export default function Projects() {
         </div>
       </header>
 
-      <main className="flex flex-col items-center pb-10 gap-10">
+      <main className="flex flex-col items-center pb-10 gap-10 mx-4 sm:mx-10 md:mx-24 lg:mx-48">
         <Reveal className="w-full max-w-4xl mx-auto flex flex-col items-center">
           <section
             id="node"
