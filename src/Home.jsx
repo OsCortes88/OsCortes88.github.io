@@ -138,7 +138,7 @@ export default function Home() {
                 className="rounded-2xl h-15 w-15"
               />
               <div className="flex flex-col">
-                <h2 className="text-2xl">Digital NEST</h2>
+                <h2 className="text-2xl">BizzNEST</h2>
                 <p className="text-sm sm:text-base">September 2026 - Present</p>
               </div>
             </div>
