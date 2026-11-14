@@ -2,6 +2,8 @@ import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./Projects";
 import Trackly from "./projects/Trackly";
+import Connect from "./projects/Connect";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
@@ -37,10 +39,12 @@ function App() {
 
       {/* Page Routing */}
       <div className="">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/trackly" element={<Trackly />} />
+          <Route path="/projects/connect" element={<Connect />} />
         </Routes>
       </div>
     </Router>

@@ -8,7 +8,7 @@ export const projects = {
       title: "Connect",
       description:
         "One challenge instructors often face is capturing students' attention at the start of class. Without engagement, even the best lesson can struggle to make an impact. Yet creating meaningful icebreakers or introductory activities takes valuable planning time.\n\nConnect is an AI-powered web application that helps instructors quickly generate engaging class activities designed to build connections with students and smoothly introduce lesson content. By reducing prep time and providing relevant, tailored activities, Connect helps educators create a more engaging start to every class.",
-      link: "", // TODO: Make dedicated page for project with demo video and more detailed descriptions
+      link: "/projects/connect",
       image: "/img/projects/Connect.png",
       date: "September 15, 2026",
     },
@@ -228,7 +228,7 @@ export default function Projects() {
               <div className="grow border-(--brand-red) border-t "></div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-10 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <Reveal direction={SLIDE_FROM.left}>
                 <ProjectCard
                   title={projects.cAndPython[0].title}
@@ -266,7 +266,7 @@ export default function Projects() {
               <div className="grow border-(--brand-blue) border-t "></div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-10 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <Reveal direction={SLIDE_FROM.left}>
                 <ProjectCard
                   title={projects.HTMLANdJS[0].title}
@@ -303,7 +303,7 @@ export default function Projects() {
               <div className="grow border-(--brand-red) border-t "></div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-10 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <Reveal direction={SLIDE_FROM.left}>
                 <ProjectCard
                   title={projects.java[0].title}
